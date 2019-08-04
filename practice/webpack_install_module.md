@@ -112,7 +112,7 @@ ReactDom.render(<WordRelay />, document.querySelector('#root'));
 
 ```
 npm i -D react-hot-loader
-npm i -D webpack-dev-server  // webpack.config.json 파일을 읽어 빌드를 해주고, 뒤쪽 서버로 유지를 시켜준다
+npm i -D webpack-dev-server  // webpack.config.js 파일을 읽어 빌드를 해주고, 뒤쪽 서버로 유지를 시켜준다
 ```
 2.명령어 바꿔주기
 
@@ -140,7 +140,7 @@ ReactDom.render(<Hot />, document.querySelector('#root'));   // <Hot /> 을 변�
 4.bable-loader 옵션에 플러그인 추가하기
 
 ```
-// webpack.config.json
+// webpack.config.js
 
 plugins: [ 
 	'@babel/plugin-proposal-class-properties',
@@ -154,5 +154,5 @@ output: {
     },
  ```
  - webpack-dev-server 를 사용하면 dist 폴더를 사용하지않는다.  
- - webpack.config.json 을 수정하면 다시 빌해줘야한다.
+ - webpack.config.js 을 수정하면 다시 빌해줘야한다.
  

@@ -1,5 +1,5 @@
 const path = require('path'); // 노드관련.. 모르면 외워라.. (경로)
-
+const webpack = require('webpack');
 module.exports = {
     name: 'word-relay-setting', // 끝말잇기에 대한 설정
     mode: 'development', // 실서비스: production
@@ -18,15 +18,27 @@ module.exports = {
             test: /\.jsx?/,
             loader: 'babel-loader',
             options: {
-                presets: [ '@babel/preset-env', '@babel/preset-react'],
-                plugins: [ '@babel/plugin-proposal-class-properties']
-            }
+                presets: [ 
+                    ['@babel/preset-env', {
+                        targets: {
+                            browsers: [ '> 1% in KR' ], // browsersList
+                        },
+                        debug: true,
+                    }],
+                    '@babel/preset-react',
+                ],
+                plugins: [ 
+                    '@babel/plugin-proposal-class-properties',
+                    'react-hot-loader/babel'
+                ]
+            },
         }],
     },
 
     //출력
     output: { 
         path: path.join(__dirname, 'dist'),
-        filename: 'app.js'
+        filename: 'app.js',
+        publicPath: '/dist'
     },
 };
