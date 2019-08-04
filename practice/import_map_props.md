@@ -31,6 +31,8 @@ export default NumberBaseball;  // import NumberBaseball
 - node에서는 require 을 사용하고, react에서는 import, export를 사용한다!
 - webpack.config.js 에서는 node가 실행하기 때문에 const를 사용해야한다!!
 
+<br>
+
 ## map()
 : react 에서 사용할 수 있는 반복문
 
@@ -51,6 +53,7 @@ export default NumberBaseball;  // import NumberBaseball
 	}) }
 </ul>
 ```
+<br>
 
 ## props
 : html 에서는 attr  /  react 에서는 props 
