@@ -116,7 +116,7 @@ npm i -D webpack-dev-server  // webpack.config.js 파일을 읽어 빌드를 해
 ```
 2.명령어 바꿔주기
 
-```json
+```
 // pakage.json 
 
   "scripts": {
