@@ -193,9 +193,9 @@ const Try = memo( ({ tryInfo }) => {  // memo() 로 감싸준다!!
 <br><br>
 
 
-**shouldComponentUpdate)()를 사용할 땐 Component **
-**PureComponent 를 사용할땐 memo()**
-
+**shouldComponentUpdate)()를 사용할 땐 Component**  
+**PureComponent 를 사용할땐 memo()**  
+  
 이 조합으로 사용하면 최적화 **GOOD**!!! 나중에 엄청난 차이!!
 
 
