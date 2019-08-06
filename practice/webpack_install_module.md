@@ -14,15 +14,17 @@ npm i react react-dom  // react, react-dom 설치
 npm i -D webpack webpack-cli  
 
 // babel 설치
-npm i -D @bable/core  // 최신 문법 바꿔줌 (안되면 -D빼고 해보고 packge.json에서 옮기기)
+npm i -D @babel/core  // 최신 문법 바꿔줌
 npm i -D @babel/preset-env  // 내 환경에 맞게 바꿔줌
 npm i -D @babel/preset-react  // jsx 바꿔주는것
 npm i -D babel-loader // babel이랑 webpack 연결해주는것
 
 npm i -D @babel/plugin-proposal-class-properties // class 사용하려면 추가하라고 메세지뜸
+
+// npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader @babel/plugin-proposal-class-properties
 ```
 
-- webpack.conpig.js  생성
+- webpack.config.js  생성
 
 ```js
 const path = require('path'); // (경로) 노드모듈시스템.. 모르면 외워라.. 상단에 스크립트 불러오는거임
@@ -113,6 +115,8 @@ ReactDom.render(<WordRelay />, document.querySelector('#root'));
 ```
 npm i -D react-hot-loader
 npm i -D webpack-dev-server  // webpack.config.js 파일을 읽어 빌드를 해주고, 뒤쪽 서버로 유지를 시켜준다
+
+//npm i -D react-hot-loader webpack-dev-server
 ```
 2.명령어 바꿔주기
 
